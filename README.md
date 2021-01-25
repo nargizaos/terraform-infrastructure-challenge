@@ -1,9 +1,8 @@
 Threee Tier Application using Terraform on AWS 
 
 
+![aws](https://user-images.githubusercontent.com/66437109/105755000-554a9a00-5f10-11eb-9f89-d3a90d659889.png)
 
-
-![aws](https://user-images.githubusercontent.com/66437109/105754147-55966580-5f0f-11eb-9cca-6595726ed17d.png)
 
 
 
