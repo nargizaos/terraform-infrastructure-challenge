@@ -55,3 +55,30 @@ resource "aws_route_table_association" "myvpc_private_subnet_two_route_table_ass
   subnet_id      = "${aws_subnet.myvpc_private_subnet_two.id}"
   route_table_id = "${aws_route_table.myvpc_private_subnet_route_table.id}"
 }
+resource "aws_eip" "nat" {
+  vpc  = true
+}
+
+resource "aws_nat_gateway" "natgw" {
+  allocation_id = "${aws_eip.nat.id}"
+  subnet_id     = "${aws_subnet.myvpc_public_subnet.id}"
+}
+
+# # Creating a Route Table for the Nat Gateway!
+# resource "aws_route_table" "natgw-rt" {
+#   vpc_id = "aws_vpc.myvpc.id"
+
+#   route {
+#     cidr_block = "0.0.0.0/0"
+#     nat_gateway_id = "aws_nat_gateway.natgw.id"
+#   }
+# }
+
+# # Creating an Route Table Association of the NAT Gateway route 
+# # table with the Private Subnet!
+# resource "aws_route_table_association" "natgw-rt-association" {
+# #  Private Subnet ID for adding this route table to the DHCP server of Private subnet!
+#   subnet_id      = "aws_subnet.myvpc_private_subnet_one.id"
+# # Route Table ID
+#   route_table_id = "aws_route_table.natgw-rt.id"
+# }
