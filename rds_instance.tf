@@ -10,7 +10,7 @@ resource "aws_db_instance" "my_database_instance" {
   db_subnet_group_name   = "${aws_db_subnet_group.my_database_subnet_group.name}"
   name                   = "mydb"
   identifier             = "mysqldb"
-  username               = "myuser"
+  username               = "user"
   password               = "mypassword"
   parameter_group_name   = "default.mysql5.7"
   skip_final_snapshot    = true
