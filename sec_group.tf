@@ -44,22 +44,20 @@ resource "aws_security_group" "db_security_group" {
 
 #create security group ingress rule for db
 resource "aws_security_group_rule" "db_ingress" {
-  count             = "${length(var.db_ports)}"
   type              = "ingress"
   protocol          = "tcp"
   cidr_blocks       = ["0.0.0.0/0"]
-  from_port         = "${element(var.db_ports, count.index)}"
-  to_port           = "${element(var.db_ports, count.index)}"
+  from_port         = 3306
+  to_port           = 3306
   security_group_id = "${aws_security_group.db_security_group.id}"
 }
 
 #create security group egress rule for db
 resource "aws_security_group_rule" "db_egress" {
-  count             = "${length(var.db_ports)}"
   type              = "egress"
-  protocol          = "tcp"
+  protocol          = "-1"
   cidr_blocks       = ["0.0.0.0/0"]
-  from_port         = "${element(var.db_ports, count.index)}"
-  to_port           = "${element(var.db_ports, count.index)}"
+  from_port         = 0
+  to_port           = 0
   security_group_id = "${aws_security_group.db_security_group.id}"
 }
