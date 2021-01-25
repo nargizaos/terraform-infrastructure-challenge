@@ -17,7 +17,7 @@ Pre-requisites:
 - `mv terraform /bin`
 
 
-Cone the repo and run the following commands from your terminal:\
+Clone the repo and run the following commands from your terminal:\
 `$ terraform init`\
 `$ terraform plan`\
 `$ terraform apply`
