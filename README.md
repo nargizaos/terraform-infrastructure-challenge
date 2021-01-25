@@ -1,5 +1,13 @@
 Threee Tier Application using Terraform on AWS 
 
+
+
+
+![aws](https://user-images.githubusercontent.com/66437109/105754147-55966580-5f0f-11eb-9cca-6595726ed17d.png)
+
+
+
+
 This code will let you install a simple three-tier application using Terraform (web app, mysql db, elb and ASG)
 
 Pre-requisites: 
