@@ -1,4 +1,4 @@
-Threee Tier Application using Terraform on AWS 
+Three Tier Application using Terraform on AWS 
 
 
 
@@ -20,9 +20,9 @@ Pre-requisites:
 
 
 Cone the repo and run the following commands from your terminal: 
-$ terraform init 
-$ terraform plan
-$ terraform apply
+- $ terraform init 
+- $ terraform plan
+- $ terraform apply
 
 
 This code will: 
