@@ -1,4 +1,4 @@
-Threee Tier Application using Terraform on AWS 
+# Three Tier Application using Terraform on AWS 
 
 
 ![aws](https://user-images.githubusercontent.com/66437109/105755000-554a9a00-5f10-11eb-9f89-d3a90d659889.png)
@@ -11,17 +11,17 @@ This code will let you install a simple three-tier application using Terraform (
 
 Pre-requisites: 
 - From your AWS account create instance, create a role and attach it to the instance (attach your public key)
-- yum install wget && unzip
-- wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
-- unzip terraform_0.11.13_linux_amd64.zip
-- mv terraform /bin
+- `yum install wget && unzip`
+- `wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip`
+- `unzip terraform_0.11.13_linux_amd64.zip`
+- `mv terraform /bin`
 - 
 
 
 Cone the repo and run the following commands from your terminal: 
-$ terraform init 
-$ terraform plan
-$ terraform apply
+`$ terraform init`
+`$ terraform plan`
+`$ terraform apply`
 
 
 This code will: 
