@@ -17,10 +17,10 @@ Pre-requisites:
 - `mv terraform /bin`
 
 
-Cone the repo and run the following commands from your terminal: 
+Cone the repo and run the following commands from your terminal:\
 `$ terraform init`\
 `$ terraform plan`\
-`$ terraform apply`\
+`$ terraform apply`
 
 
 This code will: 
